@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p>Name: <%= user.name %></p>
+    <p>Username: <%= user.username %></p>
+    <% if (user.profilepic) { %>
+        <img src="/images/uploads/<%= user.profilepic %>" alt="Profile Picture">
+    <% } else { %>
+        <p>No profile picture uploaded</p>
+    <% } %>
+</body>
+</html>
+
+
+
+
+
+ 
