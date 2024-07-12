@@ -61,6 +61,7 @@ app.get("/",function(req,res){
   res.render('index')
 })
 
+
 app.get("/create", async  function(req,res){
  await usermodel.create({
   name:"karan",
